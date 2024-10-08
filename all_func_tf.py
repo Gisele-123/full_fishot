@@ -8,7 +8,7 @@ import serial.tools.list_ports
 
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-MODEL_PATH = '../../../Downloads/new_tflite_model.tflite'
+MODEL_PATH = 'new_tflite_model.tflite'
 
 COMMAND_COOLDOWN = 6  # Cooldown for sending serial commands (in seconds)
 PLASTIC_DETECTED_SIGNAL = b'1'

@@ -10,7 +10,7 @@ import serial.tools.list_ports
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 # Path to your TensorFlow Lite model
-MODEL_PATH = '../../../Downloads/new_tflite_model.tflite'
+MODEL_PATH = 'new_tflite_model.tflite'
 
 # Constants
 COMMAND_COOLDOWN = 6  # Cooldown for sending serial commands (in seconds)
