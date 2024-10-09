@@ -97,10 +97,10 @@ try:
         # Provide visual feedback based on detection
         if plastic_confidence > non_plastic_confidence:
             cv2.putText(frame, "Plastic Detected", (10, 30 + len(class_labels)*40),
-                        cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
         else:
             cv2.putText(frame, "No Plastic Detected", (10, 30 + len(class_labels)*40),
-                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA)
 
         # Display the resulting frame
         cv2.imshow('Plastic Recognition', frame)
